@@ -1,0 +1,411 @@
+/* formatações gerais */
+
+*{
+	margin:0;
+	padding: 0;
+
+}
+
+body{
+	width: 88vw;
+	height: 100vh;
+	margin: 15px auto;
+	background-color: #ccc;
+	background-image: url(../Chale-hotel/Imagens/bg.png);
+	font-family:"Helvetica";
+}
+
+header{
+	width: 100%;
+	height: 38%;
+	background-image: url(../Chale-hotel/Imagens/topo-imagem-principal2.png);
+	background-repeat: no-repeat;
+	display: flex;
+}
+
+h1{
+	text-indent: 9000px;
+}
+
+ul{
+	list-style: none;
+	visibility: visible;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+footer{
+	background-color: white;
+	color: #7d7640;
+	padding: 10px;
+}
+
+
+
+/*formatações menu */
+
+#logo{
+	width: 59%;
+}
+
+#logo img{
+	margin-top: -23px;
+	margin-left: 13px;
+}
+
+#menu-nav{
+	width: 36vw;
+	background-image: url(../Chale-hotel/Imagens/topo-imagem-lateral.png);
+	z-index: 1;
+}
+
+#nav-topo{
+	border-top: solid 1px #8b8448;
+	border-bottom: solid 1px #8b8448;
+	display: flex;
+	justify-content: space-between;
+	margin-left:80px;
+	margin-top: 10px;
+	width:27vw;
+	height: 30px;
+}
+
+#nav-topo p {
+	font-size: 0.8em;
+	align-self: center;
+	color: #8b8448;
+}
+
+#nav-topo a{
+align-self: center;
+font-size: 0.8em;
+text-transform: uppercase;
+padding:5px 15px;
+margin-top: -2px;
+text-decoration: none;
+background-color: #a29750;
+color: #fff5b0;
+
+}
+
+#nav-topo a:hover{
+	opacity: 0.6;
+	border-radius: 40px;
+	transition: 0.5s;
+}
+
+#nav-central{
+	width: 25vw;
+	margin-left:80px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+#nav-central li{
+	padding: 5px;
+}
+
+#nav-central a{
+	color:#6e672c;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+#nav-central a:hover{
+	background-color:#FFFFE0;
+	box-shadow: 10px 10px 30px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+
+
+#nav-central img{
+	width: 60%;
+
+}
+
+/* formatação btn */
+input[type="checkbox"]{
+	visibility:hidden;
+}
+
+#btn{
+	width: 200px;
+	height: 88px;
+	position: relative;
+}
+
+#btn span{
+	display: none;
+}
+
+#btn label {
+	
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#btn span{
+	width: 25px;
+	height: 4px;
+	background-color: #fff;
+	position:absolute;
+	top: 10px;
+	left: 30px;
+
+}
+
+#btn span:before{
+	content: '';
+	width: 25px;
+	height: 4px;
+	background-color: #fff;
+	position:absolute;
+	top: 10px;
+
+}
+
+#btn span:after{
+	content: '';
+	width: 25px;
+	height: 4px;
+	background-color: #fff;
+	position:absolute;
+	top: -10px;
+
+}
+
+input:checked ~ #btn-responsive span{
+	background-color: transparent;
+	transition: 0.3s linear;
+	transform: rotate(90deg);
+}
+
+input:checked ~ #btn-responsive span:after{
+	
+	transition: 0.3s linear;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 2px;
+}
+
+input:checked ~ #btn-responsive span:before{
+	
+	transition: 0.3s linear;
+	transform: rotate(135deg);
+	position: absolute;
+	top: 2px;
+}
+
+	/* main */
+main{
+	width: 100%;
+	height: 62vh;
+	background-image: url(../Chale-hotel/Imagens/bg-container.png);
+	background-position: -200px;
+}
+
+main h1{
+	background-image: url(../Chale-hotel/Imagens/bg-area-lateral.png);
+	width: 100%;
+	height: 30px;
+}
+#section-principal{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+#section1{
+	max-width: 50%;
+
+}
+#section1  h2{
+	width: 420px;
+	color: #7d7640;
+	font-size: 1.3em;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#section1 p {
+	font-size: 1em;
+	text-indent: justify;	
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+
+#section2{
+	width: 50%;
+
+}
+
+#informacoes{
+	display: flex;
+}
+
+#informacoes .imagens {
+	width: 14vw;
+	height:14vh;
+}
+
+#informacoes h3{
+	padding:5px;
+	display: flex;
+	justify-content: space-between;
+	color: #7d7640;
+}
+
+h3 img{
+	width: 55px;
+}
+
+#informacoes p{
+	font-size: 0.9em;
+	color: black;
+	padding-left: 5px;
+}
+
+#section2 li{
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 8px;
+	margin: 10px;
+	border-bottom: 1px solid white;
+}
+
+#section2 li:hover{
+	background-color: white;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 880px){
+
+
+
+	#menu-nav{
+		background: none;
+	}
+
+	#nav-topo{
+		display: none;
+	}
+
+	#nav-central img{
+		display: none;
+	}
+
+	#nav-central a:hover{
+	background:#EEDC82;
+	box-shadow: none;
+	text-align: center;
+}
+
+	#menu-nav ul{
+		
+		background-color:#CDBE70;
+		display:;
+		position: relative;
+		left:-570px;
+		top: -44px;
+		margin-top: -2000px;
+		height:800px;
+		width:920px;	
+		text-align: center;
+		display: flex-column;
+		z-index: 0;
+	}
+
+	li {
+		width: 300px;
+		height: 40px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		margin-right: 50px;
+		margin-left: 300px;
+		font-size: 1.4em;
+		padding-left: 50px;
+
+	}
+
+	li:hover{
+		background-color:#EEDC82;
+		box-shadow: 20px 30px 50px;
+		transition: 0.1s;
+		cursor: pointer;
+	}
+
+
+	#btn span{
+		display: block;
+		z-index: 1;
+	}
+
+
+	#btn input:checked ~ ul{
+
+		display: block;
+		margin-top:-40px;
+		transition: 0.7s;
+	}
+	
+
+	#btn input:checked ~  #btn-responsive  span{
+		position: absolute;
+		transition: 1s;
+		z-index: 1;
+	}
+
+	main{
+		max-width: 100%;
+		height: 1480px;
+	}
+
+	#section-principal{
+		display: block;
+	}
+
+	#section1 p{
+
+		width: 68vw;
+	}
+
+	 #informacoes h3{
+	 	display: none;
+	 }
+	 #informacoes p{
+	 	display: none;
+	 }
+
+	 #section2 .imagens{
+	 	width: 80vw;
+	 	height: 50vh;
+		 }
+
+
+	 #section2 li{
+	 
+	 	height: 300px;
+	 	width: 400px;
+	 	margin-bottom: 40px;
+	 }
+	 #section2 li:hover{
+	 	
+	 	background-color: transparent;
+	 }
+}
+
+
